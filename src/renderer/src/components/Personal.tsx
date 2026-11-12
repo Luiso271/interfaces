@@ -42,9 +42,10 @@ function Personal(): React.JSX.Element {
 
   return (
     <div>
+      <h2>Personal</h2>
       <input
         type="text"
-        placeholder="Buscar empleado por nombre..."
+        placeholder="Buscar empleado"
         value={busqueda}
         onChange={(e) => setBusqueda(e.target.value)}
         style={{ marginBottom: '1rem', padding: '0.5rem'}}

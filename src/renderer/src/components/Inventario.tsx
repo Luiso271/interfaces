@@ -19,7 +19,7 @@ function Inventario(): React.JSX.Element {
       try {
         const respuesta = await fetch("https://fakestoreapi.com/products?limit=6");
         const datos: Producto[] = await respuesta.json();
-        setProductos(datos);
+        setProductos(datos); 
       } catch (error) {
         console.error("Error al cargar el inventario:", error);
       } finally {
@@ -41,7 +41,7 @@ function Inventario(): React.JSX.Element {
             <img 
               src={producto.image} 
               alt={producto.title} 
-              style={{ width: '100px', height: '100px', objectFit: 'contain' }} 
+              style={{ width: '5rem', height: '5rem'}} 
             />
             <h3>{producto.title}</h3>
             <p>Precio: ${producto.price}</p>
