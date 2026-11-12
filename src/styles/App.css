@@ -1,0 +1,29 @@
+#Header{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-image: linear-gradient(to right, rgb(9, 95, 207), rgb(173, 215, 244));
+    height: 7rem;;         
+}
+
+#Main{
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: row;
+}
+
+#Sidebar{
+    background-color: rgb(115, 181, 238);
+    width:15rem;
+}
+
+#Panel{
+    background-color: rgb(133, 163, 189);
+    width: calc(100vw - 15rem);
+    display:flex;
+    flex-direction: row;
+}
+
+body{
+    margin: 0;
+}
